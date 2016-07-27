@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "IBTServiceCenter.h"
+#import "TestService.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    TestService *tMgr = IBTServiceWithName(TestService);
+    [tMgr doWhatUWant];
 }
 
 - (void)didReceiveMemoryWarning {

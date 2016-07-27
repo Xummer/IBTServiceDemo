@@ -15,6 +15,9 @@
 		C1EF8A9C1D484C7400682E8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1EF8A9A1D484C7400682E8E /* LaunchScreen.storyboard */; };
 		C1EF8AA71D484C7400682E8E /* ServiceCenterDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EF8AA61D484C7400682E8E /* ServiceCenterDemoTests.m */; };
 		C1EF8AB21D484C7400682E8E /* ServiceCenterDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EF8AB11D484C7400682E8E /* ServiceCenterDemoUITests.m */; };
+		C1EF8AC81D484CF400682E8E /* TestService.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EF8AC71D484CF400682E8E /* TestService.m */; };
+		C1EF8ACB1D48519E00682E8E /* IBTService.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EF8ACA1D48519E00682E8E /* IBTService.m */; };
+		C1EF8ACE1D4851CF00682E8E /* IBTServiceCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EF8ACD1D4851CF00682E8E /* IBTServiceCenter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		C1EF8AAD1D484C7400682E8E /* ServiceCenterDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServiceCenterDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1EF8AB11D484C7400682E8E /* ServiceCenterDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceCenterDemoUITests.m; sourceTree = "<group>"; };
 		C1EF8AB31D484C7400682E8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1EF8AC61D484CF400682E8E /* TestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestService.h; sourceTree = "<group>"; };
+		C1EF8AC71D484CF400682E8E /* TestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestService.m; sourceTree = "<group>"; };
+		C1EF8AC91D48519E00682E8E /* IBTService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBTService.h; sourceTree = "<group>"; };
+		C1EF8ACA1D48519E00682E8E /* IBTService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBTService.m; sourceTree = "<group>"; };
+		C1EF8ACC1D4851CF00682E8E /* IBTServiceCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBTServiceCenter.h; sourceTree = "<group>"; };
+		C1EF8ACD1D4851CF00682E8E /* IBTServiceCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBTServiceCenter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +110,13 @@
 		C1EF8A8B1D484C7400682E8E /* ServiceCenterDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C1EF8ABF1D484CA500682E8E /* ServiceCenter */,
 				C1EF8A8F1D484C7400682E8E /* AppDelegate.h */,
 				C1EF8A901D484C7400682E8E /* AppDelegate.m */,
 				C1EF8A921D484C7400682E8E /* ViewController.h */,
 				C1EF8A931D484C7400682E8E /* ViewController.m */,
+				C1EF8AC61D484CF400682E8E /* TestService.h */,
+				C1EF8AC71D484CF400682E8E /* TestService.m */,
 				C1EF8A951D484C7400682E8E /* Main.storyboard */,
 				C1EF8A981D484C7400682E8E /* Assets.xcassets */,
 				C1EF8A9A1D484C7400682E8E /* LaunchScreen.storyboard */,
@@ -138,6 +150,17 @@
 				C1EF8AB31D484C7400682E8E /* Info.plist */,
 			);
 			path = ServiceCenterDemoUITests;
+			sourceTree = "<group>";
+		};
+		C1EF8ABF1D484CA500682E8E /* ServiceCenter */ = {
+			isa = PBXGroup;
+			children = (
+				C1EF8AC91D48519E00682E8E /* IBTService.h */,
+				C1EF8ACA1D48519E00682E8E /* IBTService.m */,
+				C1EF8ACC1D4851CF00682E8E /* IBTServiceCenter.h */,
+				C1EF8ACD1D4851CF00682E8E /* IBTServiceCenter.m */,
+			);
+			path = ServiceCenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1EF8ACB1D48519E00682E8E /* IBTService.m in Sources */,
 				C1EF8A941D484C7400682E8E /* ViewController.m in Sources */,
 				C1EF8A911D484C7400682E8E /* AppDelegate.m in Sources */,
 				C1EF8A8E1D484C7400682E8E /* main.m in Sources */,
+				C1EF8ACE1D4851CF00682E8E /* IBTServiceCenter.m in Sources */,
+				C1EF8AC81D484CF400682E8E /* TestService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
